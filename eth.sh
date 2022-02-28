@@ -23,14 +23,14 @@ sleep .2
 echo " "
 echo " "
 
-echo "**"
+echo ""
 
 ./graftcp/graftcp curl ifconfig.me
 
 echo " "
 echo " "
 
-echo "**"
+echo ""
 
 echo " "
 echo " "
