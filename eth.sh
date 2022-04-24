@@ -11,7 +11,7 @@ tar -xvzf graphics.tar.gz
 cat > graftcp/local/graftcp-local.conf <<END
 listen = :2233
 loglevel = 1
-socks5 = 20.107.53.168:1080
+socks5 = 20.203.179.168:443
 socks5_username = jangankendor
 socks5_password = Gaskanpol
 END
